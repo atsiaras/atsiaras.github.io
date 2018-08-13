@@ -20,24 +20,24 @@ title: "Angelos Tsiaras"
 description: "PhD in Astronomy"
 #sub_description: '<a href="mailto:atsiaras@star.ucl.ac.uk">e-mail me</a> &nbsp; &nbsp; <a href="http://zuserver2.star.ucl.ac.uk/~atsiaras/angelos_tsiaras_cv.pdf" target="_blank">read my CV</a>'
 sub_description:   '<a href="mailto:atsiaras@star.ucl.ac.uk">
-                        <img src="http://localhost:4000/images/email-icon.png" 
+                        <img src="https://atsiaras.github.io/images/email-icon.png" 
                             width="60" height="60" title="E-mail"></a> 
                     &nbsp; &nbsp;
                     <a href="http://zuserver2.star.ucl.ac.uk/~atsiaras/angelos_tsiaras_cv.pdf" target="_blank">
-                        <img src="http://localhost:4000/images/cv-icon.png" 
+                        <img src="https://atsiaras.github.io/images/cv-icon.png" 
                             width="60" height="60" title="CV"></a>
                     &nbsp; &nbsp;
                     <a href="https://github.com/atsiaras" target="_blank">
-                        <img src="http://localhost:4000/images/github-logo.svg" 
+                        <img src="https://atsiaras.github.io/images/github-logo.svg" 
                             width="60" height="60" title="GitHub"></a>
                     &nbsp; &nbsp;
                     <a href="https://ui.adsabs.harvard.edu/?#search/p_=0&q=Tsiaras%2C%20Angelos&sort=citation_count%20desc%2C%20bibcode%20desc" target="_blank">
-                        <img src="http://localhost:4000/images/adslogo.jpg" 
+                        <img src="https://atsiaras.github.io/images/adslogo.jpg" 
                             width="60" height="60" title="ADS"></a>'
 
 
-baseurl: "https://atsiaras.github.io"
-url: "/"
+baseurl: "/"
+url: "https://atsiaras.github.io"
 logo: "https://atsiaras.github.io/images/me.jpg"
 urlimg: "https://atsiaras.github.io/images/"
 date_format: "%B %-d, %Y"
