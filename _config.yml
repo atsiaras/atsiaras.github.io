@@ -36,10 +36,10 @@ sub_description:   '<a href="mailto:atsiaras@star.ucl.ac.uk">
                             width="60" height="60" title="ADS"></a>'
 
 
-baseurl: "https://atsiaras.github.io"
-url: ""
-logo: "https://atsiaras.github.io/images/me.jpg"
-urlimg: "https://atsiaras.github.io/images/"
+baseurl: 'https://atsiaras.github.io'
+url: '/'
+logo: 'https://atsiaras.github.io/images/me.jpg'
+urlimg: 'https://atsiaras.github.io/images/'
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
