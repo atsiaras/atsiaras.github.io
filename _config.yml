@@ -97,7 +97,7 @@ plugins:
 # Site Author
 author:
   name: Angelos Tsiaras
-  picture: /images/me.png
+#  picture: /images/me.png
   email: atsiaras@star.ucl.ac.uk
   links:
     - title: GitHub
