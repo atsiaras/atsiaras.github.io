@@ -37,7 +37,7 @@ sub_description:   '<a href="mailto:atsiaras@star.ucl.ac.uk">
 
 
 baseurl: "https://atsiaras.github.io"
-url: "/"
+url: ""
 logo: "https://atsiaras.github.io/images/me.jpg"
 urlimg: "https://atsiaras.github.io/images/"
 date_format: "%B %-d, %Y"
