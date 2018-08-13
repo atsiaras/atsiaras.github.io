@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.1.1
+    Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Angelos Tsiaras | PhD in Astronomy</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Angelos Tsiaras" />
+<meta name="author" content="Angelos Tsiaras" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PhD in Astronomy" />
+<meta property="og:description" content="PhD in Astronomy" />
+<link rel="canonical" href="http://localhost:4000/software/pylc/" />
+<meta property="og:url" content="http://localhost:4000/software/pylc/" />
+<meta property="og:site_name" content="Angelos Tsiaras" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Angelos Tsiaras" />
+<script type="application/ld+json">
+{"description":"PhD in Astronomy","author":{"@type":"Person","name":"Angelos Tsiaras"},"@type":"WebPage","url":"http://localhost:4000/software/pylc/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/me.jpg"},"name":"Angelos Tsiaras"},"headline":"Angelos Tsiaras","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="Angelos Tsiaras" href="/atom.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--page  ">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/">Home</a></li><li><a href="/about/">About me</a></li><li><a href="/projects/">Projects</a></li><li><a href="/software/">Software</a></li><li><a href="/publications/">Publications</a></li><li><a href="/presentations/">Presentations</a></li><li><a href="/media/">Media</a></li><li><a href="/teaching/">Teaching</a></li><li><a href="/outreach/">Outreach</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/" class="site-logo" rel="home" title="Angelos Tsiaras">
+        <img src="/images/me.jpg" class="site-logo-img animated fadeInDown" alt="Angelos Tsiaras">
+      </a>
+    
+    
+      <h1 class="site-title animated fadeIn"><a href="/"><font size="6"> Angelos Tsiaras</font></a></h1>
+      <p class="site-description animated fadeIn" itemprop="description">PhD in Astronomy</p>
+      <a href="mailto:atsiaras@star.ucl.ac.uk"> <img src="http://localhost:4000/images/email-icon.png" width="60" height="60" title="E-mail"></a> &nbsp; &nbsp; <a href="http://zuserver2.star.ucl.ac.uk/~atsiaras/angelos_tsiaras_cv.pdf" target="_blank"> <img src="http://localhost:4000/images/cv-icon.png" width="60" height="60" title="CV"></a> &nbsp; &nbsp; <a href="https://github.com/atsiaras" target="_blank"> <img src="http://localhost:4000/images/github-logo.svg" width="60" height="60" title="GitHub"></a> &nbsp; &nbsp; <a href="https://ui.adsabs.harvard.edu/?#search/p_=0&q=Tsiaras%2C%20Angelos&sort=citation_count%20desc%2C%20bibcode%20desc" target="_blank"> <img src="http://localhost:4000/images/adslogo.jpg" width="60" height="60" title="ADS"></a>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article>
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title"></h1>
+        
+      </header>
+      <div class="page-content">
+        <h1 id="pylightcurve">PyLightcurve</h1>
+
+<p>A python package for modeling and analysing transit light-curves.</p>
+
+<ul>
+  <li>Easy search for parameters of current exoplanets.</li>
+  <li>Calculation of limb darkening coefficients.</li>
+  <li>Calculation of exoplanetary orbits.</li>
+  <li>Calculation of transit models.</li>
+  <li>Flexible fitting of transit light-curves.</li>
+</ul>
+
+<p>This module makes use of:</p>
+
+<ul>
+  <li><a href="https://github.com/ryanvarley/ExoData">exodata</a>, <a href="http://www.sciencedirect.com/science/article/pii/S0010465516301254">Varley (2016)</a></li>
+  <li><a href="https://github.com/dfm/emcee">emcee</a>, <a href="http://iopscience.iop.org/article/10.1086/670067">Foreman-Mackey et al. (2013)</a></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Open a terminal and type <code class="highlighter-rouge">pip install pylightcurve</code>.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>The code in the examples below can be found in the example/example.py file in this repo.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import pylightcurve as plc
+&gt;&gt;&gt; import matplotlib.pyplot as plt
+&gt;&gt;&gt; import numpy as np
+
+&gt;&gt;&gt; plt.ion()
+</code></pre></div></div>
+
+<h5 id="plcfind_oec_parameterstarget">plc.find_oec_parameters(target)</h5>
+
+<p>Returns the following stellar and transit parameters: planet oec name, logarithmic stellar surface gravity, stellar 
+effective temperature, stellar metallicity, planetary radius relative to teh stellar radius, planetary bolometric 
+emission relative o the stellar bolometric emision, orbital period, orbital semi-major axis relative to the stellar 
+radius, orbital eccentricity, orbital inclination, orbital argument of periastron, transit mid-time.</p>
+
+<p>Note: The database is automatically updated on a daily basis if internet access is available.</p>
+
+<ul>
+  <li>target<br />
+Name of the planet (str).</li>
+</ul>
+
+<p>For example, we can find the parameters of HD209458b:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; (planet, stellar_logg, stellar_temperature, stellar_metallicity, rp_over_rs, fp_over_fs, 
+     period, sma_over_rs, eccentricity, inclination, periastron, mid_time) = plc.find_oec_parameters('hd209458b')
+
+&gt;&gt;&gt; print (planet, stellar_logg, stellar_temperature, stellar_metallicity, rp_over_rs, fp_over_fs, 
+           period, sma_over_rs, eccentricity, inclination, periastron, mid_time)
+('HD 209458 b', 4.375254713815686, 6075.0, 0.02, 0.12035170971037652, 5.1956599618667065e-05, 3.52474859, 
+ 8.8593557009493, 0.0004, 86.59, 0.0, 2451370.048)
+</code></pre></div></div>
+
+<h5 id="plcclablimbmethod-stellar_logg-stellar_temperature-stellar_metallicity-photometric_filter-stellar_modelatlas">plc.clablimb(method, stellar_logg, stellar_temperature, stellar_metallicity, photometric_filter, stellar_model=’ATLAS’)</h5>
+
+<p>Returns a list of limb darkening coefficients.</p>
+
+<ul>
+  <li>
+    <p>method<br />
+Limb darkening law (str, ‘claret’ is the only one currently supported).</p>
+  </li>
+  <li>
+    <p>stellar_logg<br />
+Logarithmic stellar surface gravity (float, in cm/s/s).</p>
+  </li>
+  <li>
+    <p>stellar_temperature<br />
+Stellar effective temperature (float, in Kelvin).</p>
+  </li>
+  <li>
+    <p>stellar_metallicity<br />
+Stellar metallicity (float, dex Fe/H).</p>
+  </li>
+  <li>
+    <p>photometric_filter<br />
+Photometric band of the observation (str, available filters: ‘B’, ‘C’, ‘H’, ‘I’, ‘J’, ‘K’, ‘Kp’, ‘R’, ‘S1’, ‘S2’, 
+‘S3’, ‘S4’, ‘U’, ‘V’, ‘b’, ‘g’, ‘i,’, ‘r,’, ‘u’, ‘u,’, ‘v’, ‘y’, ‘z,’).</p>
+  </li>
+</ul>
+
+<p>For example, we can calculate the limb darkening coefficients for the claret law for HD209458b in the optical band:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; limb_darkening_coefficients = plc.clablimb('claret', stellar_logg, stellar_temperature, 
+                                               stellar_metallicity, 'V')
+
+&gt;&gt;&gt; print limb_darkening_coefficients
+[ 0.38606363  0.58637444 -0.19471546 -0.00559748]
+</code></pre></div></div>
+
+<h5 id="plcexoplanet_orbitperiod-sma_over_rs-eccentricity-inclination-periastron-mid_time-time_array">plc.exoplanet_orbit(period, sma_over_rs, eccentricity, inclination, periastron, mid_time, time_array)</h5>
+
+<p>Returns the position vector of the planet in a coordinate system with the parent star at (x,y,z) = (0,0,0), the 
+observer at (x,y,z) = (+inf,0,0) and the z-axis perpendicular to the plane of reference.</p>
+
+<ul>
+  <li>
+    <p>period<br />
+Orbital period (float, in days).</p>
+  </li>
+  <li>
+    <p>sma_over_rs<br />
+Orbital semi-major axis relative to the stellar radius (float, no units).</p>
+  </li>
+  <li>
+    <p>eccentricity<br />
+Orbital eccentricity (float, no units).</p>
+  </li>
+  <li>
+    <p>inclination<br />
+Orbital inclination (float, in degrees).</p>
+  </li>
+  <li>
+    <p>periastron<br />
+Orbital argument of periastron (float, in degrees).</p>
+  </li>
+  <li>
+    <p>mid_time<br />
+Transit mid-time (float, in days).</p>
+  </li>
+  <li>
+    <p>time_array<br />
+A time sequence (numpy array, in days).</p>
+  </li>
+</ul>
+
+<p>For example, we can calculate the position vector of HD209458b from 2 hours before the mid-transit to 2 hours after 
+the mid-transit with a frequency of 1 point per minute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; time_array = np.arange(mid_time - 2.0 / 24.0, mid_time + 2.0 / 24.0, 1.0 / 60.0 / 24.0)
+
+&gt;&gt;&gt; (position_x, position_y, position_z) = plc.exoplanet_orbit(period, sma_over_rs, eccentricity, inclination, 
+                                                               periastron, mid_time, time_array)
+                                    
+&gt;&gt;&gt; plt.subplot(3,1,1)
+&gt;&gt;&gt; plt.plot(time_array, position_x, 'ko', ms=3)
+&gt;&gt;&gt; plt.ylabel('x (R star)')
+&gt;&gt;&gt; plt.subplot(3,1,2)
+&gt;&gt;&gt; plt.plot(time_array, position_y, 'ko', ms=3)
+&gt;&gt;&gt; plt.ylabel('y (R star)')
+&gt;&gt;&gt; plt.subplot(3,1,3)
+&gt;&gt;&gt; plt.plot(time_array, position_z, 'ko', ms=3)
+&gt;&gt;&gt; plt.ylabel('z (R star)')
+&gt;&gt;&gt; plt.xlabel('time (days)')
+</code></pre></div></div>
+
+<h5 id="plctransit_projected_distanceperiod-sma_over_rs-eccentricity-inclination-periastron-mid_time-time_array-precision3">plc.transit_projected_distance(period, sma_over_rs, eccentricity, inclination, periastron, mid_time, time_array, precision=3)</h5>
+
+<p>Returns the projected distance between the planet and its parent star. When the planet is further than the star, 
+the values returned are negative.</p>
+
+<ul>
+  <li>
+    <p>period<br />
+Orbital period (float, in days).</p>
+  </li>
+  <li>
+    <p>sma_over_rs<br />
+Orbital semi-major axis relative to the stellar radius (float, no units).</p>
+  </li>
+  <li>
+    <p>eccentricity<br />
+Orbital eccentricity (float, no units).</p>
+  </li>
+  <li>
+    <p>inclination<br />
+Orbital inclination (float, in degrees).</p>
+  </li>
+  <li>
+    <p>periastron<br />
+Orbital argument of periastron (float, in degrees).</p>
+  </li>
+  <li>
+    <p>mid_time<br />
+Transit mid-time (float, in days).</p>
+  </li>
+  <li>
+    <p>time_array<br />
+A time sequence (numpy array, in days).</p>
+  </li>
+</ul>
+
+<p>For example, we can calculate the projected distance of HD209458b from its host star from 2 hours before the 
+mid-transit to 2 hours after the mid-transit with a frequency of 1 point per minute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; z_over_rs = plc.transit_projected_distance(period, sma_over_rs, eccentricity, inclination, periastron,
+                                               mid_time, time_array)
+
+&gt;&gt;&gt; plt.plot(time_array, z_over_rs, 'ko', ms=3)
+&gt;&gt;&gt; plt.axhline(1, color='k', ls='--')
+&gt;&gt;&gt; plt.text(0.5 * (plt.xlim()[1] + plt.xlim()[0]), 0.99, 'transit', ha='center', va='top')
+&gt;&gt;&gt; plt.xlabel('time (days)')
+&gt;&gt;&gt; plt.ylabel('projected distance (R star)')
+</code></pre></div></div>
+
+<h5 id="plctransit_flux_dropmethod-limb_darkening_coefficients-rp_over_rs-z_over_rs-precision3">plc.transit_flux_drop(method, limb_darkening_coefficients, rp_over_rs, z_over_rs, precision=3)</h5>
+
+<p>Returns the observed stellar flux as a function of time - i.e. the transit light-curve.</p>
+
+<ul>
+  <li>
+    <p>method<br />
+Limb darkening law (str, available methods: ‘claret’, ‘quad’, ‘sqrt’ or ‘linear’).</p>
+  </li>
+  <li>
+    <p>limb_darkening_coefficients<br />
+A list containing the limb darkening coefficients. The list should contain 1 element if the method used is the 
+‘linear’, 2 if the method used is the ‘quad’ or teh ‘sqrt’, and 4 if the method used is the ‘claret’.</p>
+  </li>
+  <li>
+    <p>rp_over_rs<br />
+Planetary radius relative to the stellar radius (float, no units)</p>
+  </li>
+  <li>
+    <p>z_over_rs<br />
+Projected distance between the planet and its parent star relative to the stellar radius (numpy array, no units).</p>
+  </li>
+  <li>
+    <p>precision<br />
+The level of the numerical precision for the calculation (int, 0 to 6, default value is 3).</p>
+  </li>
+</ul>
+
+<p>For example, we can calculate the transit light-curve of HD209458b from 2 hours before the mid-transit to 2 hours 
+after the mid-transit with a frequency of 1 point per minute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; transit_light_curve = plc.transit_flux_drop('claret', limb_darkening_coefficients, rp_over_rs, z_over_rs)
+
+&gt;&gt;&gt; plt.plot(time_array, transit_light_curve, 'ko', ms=3)
+&gt;&gt;&gt; plt.ylim(plt.ylim()[0], 1.001)
+&gt;&gt;&gt; plt.xlabel('time (days)')
+&gt;&gt;&gt; plt.ylabel('observed flux (%)')
+</code></pre></div></div>
+
+<h5 id="plctransitmethod-limb_darkening_coefficients-rp_over_rs-period-sma_over_rs-eccentricity-inclination-periastron-mid_time-time_array-precision3">plc.transit(method, limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, eccentricity, inclination, periastron, mid_time, time_array, precision=3)</h5>
+
+<p>Returns the transit light-curve, directly from the orbital parameters.</p>
+
+<ul>
+  <li>
+    <p>method<br />
+Limb darkening law (str, available methods: ‘claret’, ‘quad’, ‘sqrt’ or ‘linear’).</p>
+  </li>
+  <li>
+    <p>limb_darkening_coefficients<br />
+A list containing the limb darkening coefficients. The list should contain 1 element if the method used is the 
+‘linear’, 2 if the method used is the ‘quad’ or teh ‘sqrt’, and 4 if the method used is the ‘claret’.</p>
+  </li>
+  <li>
+    <p>rp_over_rs<br />
+Planetary radius relative to the stellar radius (float, no units)</p>
+  </li>
+  <li>
+    <p>period<br />
+Orbital period (float, in days).</p>
+  </li>
+  <li>
+    <p>sma_over_rs<br />
+Orbital semi-major axis relative to the stellar radius (float, no units).</p>
+  </li>
+  <li>
+    <p>eccentricity<br />
+Orbital eccentricity (float, no units).</p>
+  </li>
+  <li>
+    <p>inclination<br />
+Orbital inclination (float, in degrees).</p>
+  </li>
+  <li>
+    <p>periastron<br />
+Orbital argument of periastron (float, in degrees).</p>
+  </li>
+  <li>
+    <p>mid_time<br />
+Transit mid-time (float, in days).</p>
+  </li>
+  <li>
+    <p>time_array<br />
+A time sequence (numpy array, in days).</p>
+  </li>
+  <li>
+    <p>precision<br />
+The level of the numerical precision for the calculation (int, 0 to 6, default value is 3).</p>
+  </li>
+</ul>
+
+<p>For example, we can calculate the transit light-curve of HD209458b from 2 hours before the mid-transit to 2 hours after 
+the mid-transit with a frequency of 1 point per minute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; transit_light_curve = plc.transit('claret', limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, 
+                                      eccentricity, inclination, periastron, mid_time, time_array)
+
+&gt;&gt;&gt; plt.plot(time_array, transit_light_curve, 'ko', ms=3)
+&gt;&gt;&gt; plt.ylim(plt.ylim()[0], 1.001)
+&gt;&gt;&gt; plt.xlabel('time (days)')
+&gt;&gt;&gt; plt.ylabel('observed flux (%)')
+</code></pre></div></div>
+
+<h5 id="plctransit_integratedmethod-limb_darkening_coefficients-rp_over_rs-period-sma_over_rs-eccentricity-inclination-periastron-mid_time-time_array-exp_time-time_factor-precision3">plc.transit_integrated(method, limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, eccentricity, inclination, periastron, mid_time, time_array, exp_time, time_factor, precision=3)</h5>
+
+<p>Returns the exposure-integrated transit light-curve, directly from the orbital parameters.</p>
+
+<ul>
+  <li>
+    <p>method<br />
+Limb darkening law (str, available methods: ‘claret’, ‘quad’, ‘sqrt’ or ‘linear’).</p>
+  </li>
+  <li>
+    <p>limb_darkening_coefficients<br />
+A list containing the limb darkening coefficients. The list should contain 1 element if the method used is the 
+‘linear’, 2 if the method used is the ‘quad’ or teh ‘sqrt’, and 4 if the method used is the ‘claret’.</p>
+  </li>
+  <li>
+    <p>rp_over_rs<br />
+Planetary radius relative to the stellar radius (float, no units)</p>
+  </li>
+  <li>
+    <p>period<br />
+Orbital period (float, in days).</p>
+  </li>
+  <li>
+    <p>sma_over_rs<br />
+Orbital semi-major axis relative to the stellar radius (float, no units).</p>
+  </li>
+  <li>
+    <p>eccentricity<br />
+Orbital eccentricity (float, no units).</p>
+  </li>
+  <li>
+    <p>inclination<br />
+Orbital inclination (float, in degrees).</p>
+  </li>
+  <li>
+    <p>periastron<br />
+Orbital argument of periastron (float, in degrees).</p>
+  </li>
+  <li>
+    <p>mid_time<br />
+Transit mid-time (float, in days).</p>
+  </li>
+  <li>
+    <p>time_array<br />
+A time sequence (numpy array, in days).</p>
+  </li>
+  <li>
+    <p>exp_time<br />
+Exposure time (float, in seconds).</p>
+  </li>
+  <li>
+    <p>time_factor<br />
+Number of sub-exposures to be calculated per exposure (int, no units).</p>
+  </li>
+  <li>
+    <p>precision<br />
+The level of the numerical precision for the calculation (int, 0 to 6, default value is 3).</p>
+  </li>
+</ul>
+
+<p>For example, we can calculate the transit light-curve of HD209458b from 2 hours before the mid-transit to 2 hours after 
+the mid-transit with a frequency of 1 point per minute, assuming an exposure time of 30 seconds which is divided into 
+10 sub-exposures:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; transit_light_curve = plc.transit_integrated('claret', limb_darkening_coefficients, rp_over_rs, period, 
+                                                 sma_over_rs, eccentricity, inclination, periastron, mid_time, 
+                                                 time_array, 30, 10)
+
+&gt;&gt;&gt; plt.plot(time_array, transit_light_curve, 'ko', ms=3)
+&gt;&gt;&gt; plt.ylim(plt.ylim()[0], 1.001)
+&gt;&gt;&gt; plt.xlabel('time (days)')
+&gt;&gt;&gt; plt.ylabel('observed flux (%)')
+</code></pre></div></div>
+
+<h5 id="plctransitandpolyfittingdata-method-limb_darkening_coefficients-rp_over_rs-period-sma_over_rs-eccentricity-inclination-periastron-mid_time-iterations-walkers-burn-precision3-exp_time0-time_factor1-fit_first_orderfalse-fit_second_orderfalse-fit_rp_over_rsfalse-fit_periodfalse-fit_sma_over_rsfalse-fit_eccentricityfalse-fit_inclinationfalse-fit_periastronfalse-fit_mid_timefalse-countertrue-counter_windowfalse">plc.TransitAndPolyFitting(data, method, limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, eccentricity, inclination, periastron, mid_time, iterations, walkers, burn, precision=3, exp_time=0, time_factor=1, fit_first_order=False, fit_second_order=False, fit_rp_over_rs=False, fit_period=False, fit_sma_over_rs=False, fit_eccentricity=False, fit_inclination=False, fit_periastron=False, fit_mid_time=False, counter=True, counter_window=False):</h5>
+
+<p>Offers a range of options for fitting observed transit light-curves, simultaneously with a second-order polynomial 
+de-trending function.</p>
+
+<ul>
+  <li>
+    <p>data<br />
+A list containing the input data sets. Each element in the list is a list of 3 arrays, 
+representing the time (in Heliocentric Julian Date), the stellar flux and the uncertainty in the stellar flux
+example: <code class="highlighter-rouge">data=[[time_0, flux_0, error_0], [time_1, flux_1, error_1], [time_2, flux_2, error_2]]</code></p>
+  </li>
+  <li>
+    <p>method<br />
+Limb darkening law (str, available methods: ‘claret’, ‘quad’, ‘sqrt’ or ‘linear’).</p>
+  </li>
+  <li>
+    <p>limb_darkening_coefficients<br />
+A list containing the limb darkening coefficients. The list should contain 1 element if the method used is the 
+‘linear’, 2 if the method used is the ‘quad’ or teh ‘sqrt’, and 4 if the method used is the ‘claret’.
+To fit for the limb darkening coefficients set <code class="highlighter-rouge">limb_darkening_coefficients='fit'</code>.</p>
+  </li>
+  <li>
+    <p>rp_over_rs<br />
+Initial value for the planetary radius relative to the stellar radius (float, no units)</p>
+  </li>
+  <li>
+    <p>period<br />
+Initial value for the orbital period (float, in days).</p>
+  </li>
+  <li>
+    <p>sma_over_rs<br />
+Initial value for the orbital semi-major axis relative to the stellar radius (float, no units).</p>
+  </li>
+  <li>
+    <p>eccentricity<br />
+Initial value for the orbital eccentricity (float, no units).</p>
+  </li>
+  <li>
+    <p>inclination<br />
+Initial value for the orbital inclination (float, in degrees).</p>
+  </li>
+  <li>
+    <p>periastron<br />
+Initial value for the orbital argument of periastron (float, in degrees).</p>
+  </li>
+  <li>
+    <p>mid_time<br />
+Initial value for the transit mid-time (float, in days).</p>
+  </li>
+  <li>
+    <p>time_array<br />
+A time sequence (numpy array, in days).</p>
+  </li>
+  <li>
+    <p>iterations<br />
+Number of total mcmc iterations (int, no units).</p>
+  </li>
+  <li>
+    <p>walkers<br />
+Number of walkers, as defined in the emcee package (int, no units).</p>
+  </li>
+  <li>
+    <p>burn<br />
+Number of iterations to be excluded from the beginning of the chains (int, no units).</p>
+  </li>
+  <li>
+    <p>precision<br />
+The level of the numerical precision for the calculation (int, 0 to 6, default value is 3).</p>
+  </li>
+  <li>
+    <p>exp_time<br />
+Exposure time (float, in seconds, default value is 0).</p>
+  </li>
+  <li>
+    <p>time_factor<br />
+Number of sub-exposures to be calculated per exposure (int, no units, default value is 1).</p>
+  </li>
+  <li>
+    <p>fit_first_order<br />
+Flag for including a first order time-dependent de-trending factor (bool, default value is False).</p>
+  </li>
+  <li>
+    <p>fit_second_order<br />
+Flag for including a second order time-dependent de-trending factor (bool, default value is False).</p>
+  </li>
+  <li>
+    <p>fit_rp_over_rs<br />
+A 2-element list containing the lower and upper limits for fitting the planetary radius relative to the stellar radius.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>fit_period<br />
+A 2-element list containing the lower and upper limits for fitting the orbital period.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>fit_sma_over_rs<br />
+A 2-element list containing the lower and upper limits for fitting the orbital semi-major axis relative to the stellar radius.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>fit_eccentricity<br />
+A 2-element list containing the lower and upper limits for fitting the orbital eccentricity.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>fit_inclination<br />
+A 2-element list containing the lower and upper limits for fitting the orbital inclination.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>fit_periastron<br />
+A 2-element list containing the lower and upper limits for fitting the orbital argument of periastron.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>fit_mid_time<br />
+A 2-element list containing the lower and upper limits for fitting the the transit mid-time.
+To avoid fitting set <code class="highlighter-rouge">fit_rp_over_rs=False</code>. Default value is False.</p>
+  </li>
+  <li>
+    <p>counter<br />
+Flag for printing a counter of the completed iterations (bool, default value is True).</p>
+  </li>
+  <li>
+    <p>counter_window=False<br />
+Flag for showing a counter of the completed iterations in an additional Tk window (bool, default value is False).</p>
+  </li>
+</ul>
+
+<h5 id="plctransitandpolyfitting-methods">plc.TransitAndPolyFitting methods:</h5>
+
+<h6 id="run_mcmc">.run_mcmc()</h6>
+
+<p>Sets up and runs the mcmc.</p>
+
+<h6 id="save_allexport_file">.save_all(export_file)</h6>
+
+<p>Saves all the mcmc results (including the chains) in the form of a pickle file.</p>
+
+<ul>
+  <li>export_file<br />
+File to be created (str).</li>
+</ul>
+
+<h6 id="save_resultsexport_file">.save_results(export_file)</h6>
+
+<p>Saves the final values and uncertainties of the fitted parameters in the form of a txt file.</p>
+
+<ul>
+  <li>export_file<br />
+File to be created (str).</li>
+</ul>
+
+<h6 id="plot_cornerexport_file">.plot_corner(export_file)</h6>
+
+<p>Plots the correlations between the fitted parameters.</p>
+
+<ul>
+  <li>export_file<br />
+File to be created (str).</li>
+</ul>
+
+<h6 id="plot_tracesexport_file">.plot_traces(export_file)</h6>
+
+<p>Plots the mcmc chains of the fitted parameters.</p>
+
+<ul>
+  <li>export_file<br />
+File to be created (str).</li>
+</ul>
+
+<h6 id="plot_modelsexport_file">.plot_models(export_file)</h6>
+
+<p>Plots the original data and the full model fitted. A prefix is added to indicate the different data sets (set_1, set_2, etc.).</p>
+
+<ul>
+  <li>export_file<br />
+File to be created (str).</li>
+</ul>
+
+<h6 id="plot_detrended_modelsexport_file">.plot_detrended_models(export_file)</h6>
+
+<p>Plots the data corrected by the de-trending function and the transit model fitted. A prefix is added to indicate the 
+different data sets (set_1, set_2, etc.).</p>
+
+<ul>
+  <li>export_file<br />
+File to be created (str).</li>
+</ul>
+
+<p>In the following example we will create 3 simulated observations of HD209458b, with an exposure time of 2 minutes and 
+additional second-order time-dependent systematics, and fit them using the <strong>plc.TransitAndPolyFitting</strong> class. To 
+avoid an extremely slow process, we will use a time factor of 2 for the fitting, while we will use a time factor of 
+120 to create the simulated observations:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; time_array = np.arange(mid_time + 10.0 * period - 0.11, mid_time + 10.0 * period + 0.11, 2.0 / 60.0 / 24.0)
+&gt;&gt;&gt; flux_array = plc.transit_integrated('claret', limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, 
+                                        eccentricity, inclination, periastron, mid_time, time_array, 120, 120, 
+                                        precision=6)
+&gt;&gt;&gt; systematics_array = 1.2 * (1 + 0.013 * (time_array - time_array[0]) + 
+                               0.03 * ((time_array - time_array[0]) ** 2))
+&gt;&gt;&gt; error_array = np.random.normal(0, 0.002, len(time_array))
+
+&gt;&gt;&gt; time0 = time_array
+&gt;&gt;&gt; flux0 = flux_array * systematics_array + error_array
+&gt;&gt;&gt; error0 = np.ones_like(error_array) * np.std(error_array)
+
+&gt;&gt;&gt; time_array = np.arange(mid_time + 25.0 * period - 0.13, mid_time + 25.0 * period + 0.13, 2.0 / 60.0 / 24.0)
+&gt;&gt;&gt; flux_array = plc.transit_integrated('claret', limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, 
+                                        eccentricity, inclination, periastron, mid_time, time_array, 120, 120, 
+                                        precision=6)
+&gt;&gt;&gt; systematics_array = 3.6 * (1 - 0.02 * (time_array - time_array[0]) + 
+                               0.05 * ((time_array - time_array[0]) ** 2))
+&gt;&gt;&gt; error_array = np.random.normal(0, 0.005, len(time_array))
+
+&gt;&gt;&gt; time1 = time_array
+&gt;&gt;&gt; flux1 = flux_array * systematics_array + error_array
+&gt;&gt;&gt; error1 = np.ones_like(error_array) * np.std(error_array)
+
+&gt;&gt;&gt; time_array = np.arange(mid_time + 31.0 * period - 0.115, mid_time + 31.0 * period + 0.115, 2.0 / 60.0 / 24.0)
+&gt;&gt;&gt; flux_array = plc.transit_integrated('claret', limb_darkening_coefficients, rp_over_rs, period, sma_over_rs, 
+                                        eccentricity, inclination, periastron, mid_time, time_array, 120, 120, 
+                                        precision=6)
+&gt;&gt;&gt; systematics_array = 0.75 * (1 - 0.01 * (time_array - time_array[0]) 
+                                + 0.0001 * ((time_array - time_array[0]) ** 2))
+&gt;&gt;&gt; error_array = np.random.normal(0, 0.0009, len(time_array))
+
+&gt;&gt;&gt; time2 = time_array
+&gt;&gt;&gt; flux2 = flux_array * systematics_array + error_array
+&gt;&gt;&gt; error2 = np.ones_like(error_array) * np.std(error_array)
+
+&gt;&gt;&gt; plt.close('all')
+&gt;&gt;&gt; plt.ioff()
+
+&gt;&gt;&gt; fitting = plc.TransitAndPolyFitting(
+        data=[[time0, flux0, error0], [time1, flux1, error1], [time2, flux2, error2]],
+        method='claret',
+        limb_darkening_coefficients=limb_darkening_coefficients,
+        rp_over_rs=rp_over_rs,
+        period=period,
+        sma_over_rs=sma_over_rs,
+        eccentricity=eccentricity,
+        inclination=inclination,
+        periastron=periastron,
+        mid_time=mid_time,
+        iterations=150000,
+        walkers=50,
+        burn=50000,
+        precision=3,
+        time_factor=2,
+        exp_time=120,
+        fit_first_order=True,
+        fit_second_order=True,
+        fit_rp_over_rs=[rp_over_rs / 2.0, rp_over_rs * 2.0],
+        fit_period=[period / 2.0, period * 2.0],
+        fit_sma_over_rs=[sma_over_rs / 2, sma_over_rs * 2.0],
+        fit_inclination=[70, 90],
+        fit_mid_time=[mid_time - 0.1, mid_time + 0.1])
+
+&gt;&gt;&gt; fitting.run_mcmc()
+
+&gt;&gt;&gt; fitting.save_all('simulation_data_base.pickle')
+&gt;&gt;&gt; fitting.save_results('simulation_results.txt')
+&gt;&gt;&gt; fitting.plot_corner('simulation_correlations.pdf')
+&gt;&gt;&gt; fitting.plot_traces('simulation_traces.pdf')
+&gt;&gt;&gt; fitting.plot_models('simulation_full_models.pdf')
+&gt;&gt;&gt; fitting.plot_detrended_models('simulation_detrended_models.pdf')
+</code></pre></div></div>
+
+<h2 id="licence">Licence</h2>
+
+<p>MIT License</p>
+
+<p>Copyright (c) 2016-2017 Angelos Tsiaras, Konstantinos Karpouzas and Ryan Varley</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+
+        
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a><a class="social-icon" href="https://github.com/atsiaras"><i class="fab fa-github-square fa-2x" title="GitHub"></i></a></div><div class="copyright">
+    
+      <p>&copy; 2018 Angelos Tsiaras. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+  </body>
+
+</html>
