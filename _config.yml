@@ -36,8 +36,7 @@ sub_description:   '<a href="mailto:atsiaras@star.ucl.ac.uk">
                             width="60" height="60" title="ADS"></a>'
 
 
-baseurl: "/"
-url: "https://atsiaras.github.io"
+url: ""
 logo: "https://atsiaras.github.io/images/me.jpg"
 urlimg: "https://atsiaras.github.io/images/"
 date_format: "%B %-d, %Y"
@@ -97,7 +96,7 @@ plugins:
 # Site Author
 author:
   name: Angelos Tsiaras
-  picture: /images/me.png
+  picture: https://github.com/atsiaras/atsiaras.github.io/tree/master/images/me.png
   email: atsiaras@star.ucl.ac.uk
   links:
     - title: GitHub
