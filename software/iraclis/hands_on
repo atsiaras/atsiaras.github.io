@@ -108,10 +108,10 @@
 <p>Open a terminal and type: <code class="highlighter-rouge">pip install iraclis</code></p>
 
 <p>Now, the code will need some data to run, and to avoind having everyone downloading at the same time,
-please go <a href="https://github.com/ucl-exoplanets/Iraclis/tree/master/examples" here</a> and download the three files shown.</p>
+please go <a href="https://github.com/ucl-exoplanets/Iraclis/tree/master/examples"> here</a> and download the three files shown.</p>
 
 <p>Finally, cd the directory where you have saved these three files and type:
-<code class="highlighter-rouge">pyton get_hatp26b_test_dataset.py</code></p>
+<code class="highlighter-rouge">python get_hatp26b_test_dataset.py</code></p>
 
 
 
